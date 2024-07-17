@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("Dom is Ready! Let's do some stuff");
+  new ClipboardJS("#signature-copy");
 
   const copyButton = document.getElementById("signature-copy");
 
