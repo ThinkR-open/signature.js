@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("Dom is Ready! Let's do some stuff");
 
+  const copyButton = document.getElementById("signature-copy");
+
+  function handleButtonClick() {
+    copyButton.disabled = true;
+    copyButton.innerHTML = "<i class='fas fa-check'></i> Copied!";
+    setTimeout(() => {
+      copyButton.disabled = false;
+      copyButton.innerHTML = "<i class='fas fa-copy'></i> Copy to clipboard";
+    }, 1000);
+
+    var toastElement = document.getElementById("signature-copy-toast");
+    var toast = new bootstrap.Toast(toastElement);
+    toast.show((delay = 1000));
+  }
+
   const signatureInputs = document.querySelectorAll(
     'input[id^="form_signature"]'
   );
@@ -31,4 +46,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
   signatureInputs.forEach((input) => {
     input.addEventListener("input", handleInputChange);
   });
+  copyButton.addEventListener("click", handleButtonClick);
 });

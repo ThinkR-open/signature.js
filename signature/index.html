@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="www/css/signature.css">
   </script>
   <link rel="icon" type="image/x-icon" href="www/assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -302,10 +305,23 @@
             </div>
           </div>
           <div class="card-footer bg-transparent border-top-0">
-            <button type="button" class="btn btn-info w-100" id="signature-copy">Copy to clipboard</button>
+            <button type="button" class="btn btn-info w-100" id="signature-copy"> <i class="fas fa-copy"></i> Copy to
+              clipboard</button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="toast" id="signature-copy-toast" role="alert" aria-live="assertive" aria-atomic="true"
+    style="position: absolute; bottom: 10px; right: 10px;">
+    <div class="toast-header">
+      <div style="border-radius: 50%; margin-right: 5px; width: 16px; height: 16px; background-color: var(--bs-info)">
+      </div>
+      Hello the team
+    </div>
+
+    <div class="toast-body">
+      Paste the signature in your email client
     </div>
   </div>
 </body>
