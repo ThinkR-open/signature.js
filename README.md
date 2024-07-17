@@ -30,7 +30,15 @@ Lastly, updating the banner (the image at the bottom of the signature) and the a
 
 ## Modify the theme
 
-...
+This app uses Bootstrap `5.3.3`.
+
+To modify the theme, edit the `signature/www/scss/signature.scss` file.
+
+To compile the SCSS to CSS, run:
+
+```bash
+sass signature/www/scss/signature.scss signature/www/css/signature.css
+```
 
 ## How the redirection banner works?
 
