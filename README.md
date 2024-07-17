@@ -43,3 +43,7 @@ To modify the redirection URL, edit the `index.html` file.
 The mockup was created using [Figma](https://www.figma.com/).
 
 Explore the mockup [here](https://www.figma.com/proto/u95KvEqgWLB8arxt7saZcJ/%7Bsignature%7D?node-id=705-5&t=xevegkmzONTrRyR3-8&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=705%3A5&hide-ui=1).
+
+## Code of Conduct
+
+Please note that the signature.js project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.3.3",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "index.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "index.html": {
+      "checksum": "3297e6fac3c88255b95c4f6733b7c534"
+    },
+    "www/assets/current_banner.png": {
+      "checksum": "3636b04621cc9c8b814fdef693f124c6"
+    },
+    "www/assets/favicon.ico": {
+      "checksum": "0ec3fa0e177c8297fadea2797fe6df36"
+    },
+    "www/assets/icons/github.png": {
+      "checksum": "a29dc3691124638b000809a7696281d5"
+    },
+    "www/assets/icons/linkedin.png": {
+      "checksum": "d492efc706db983e74258dbd348f2208"
+    },
+    "www/assets/icons/twitch.png": {
+      "checksum": "14b31ed2b2b0a67bad1f12faa6a20cb7"
+    },
+    "www/assets/icons/twitter.png": {
+      "checksum": "a8f692e1d74ae65793b6d212794bc0c2"
+    },
+    "www/assets/icons/youtube.png": {
+      "checksum": "8f8bc2286e823d24d028e4c2b7ce754d"
+    },
+    "www/assets/signature_hex.png": {
+      "checksum": "b2bdba3dfed1692ca7af6486b6597235"
+    },
+    "www/js/signature.js": {
+      "checksum": "ab24f36d4c50ca059eca92587dcbbe0b"
+    }
+  },
+  "users": null
+}
