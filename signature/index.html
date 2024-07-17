@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signature.js</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="www/assets/favicon.ico">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="www/js/signature.js"></script>
+
+  <div class="container">
+    <nav class="navbar navbar-light bg-transparent">
+      <a href="/" class="navbar-brand">Signature.js</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12 p-3">
+        <div class="row">
+          <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-myAccordion-0">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#myAccordion-0" aria-expanded="true" aria-controls="myAccordion-0">Personal
+                  information</button>
+              </h2>
+              <div id="myAccordion-0" class="accordion-collapse collapse show" aria-labelledby="heading-myAccordion-0"
+                data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                  <div class="form-group">
+                    <div class="mb-3">
+                      <label for="form_signature-firstname" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="form_signature-firstname" placeholder="John">
+                    </div>
+                    <div class="mb-0">
+                      <label for="form_signature-lastname" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="form_signature-lastname" placeholder="John">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-myAccordion-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#myAccordion-1" aria-expanded="false" aria-controls="myAccordion-1">Business
+                  information</button>
+              </h2>
+              <div id="myAccordion-1" class="accordion-collapse collapse " aria-labelledby="heading-myAccordion-1"
+                data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                  <div class="form-group">
+                    <div class="mb-3">
+                      <label for="form_signature-job_title" class="form-label">Job title</label>
+                      <input type="text" class="form-control" id="form_signature-job_title"
+                        placeholder="Data Scientist">
+                    </div>
+                    <div class="mb-3">
+                      <label for="form_signature-email" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="form_signature-email" placeholder="you@thinkr.fr">
+                    </div>
+                    <div class="mb-0">
+                      <label for="form_signature-phone" class="form-label">Phone number</label>
+                      <input type="text" class="form-control" id="form_signature-phone"
+                        placeholder="+33(0) xx xx xx xx">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-myAccordion-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#myAccordion-2" aria-expanded="false" aria-controls="myAccordion-2">Details about this
+                  application</button>
+              </h2>
+              <div id="myAccordion-2" class="accordion-collapse collapse " aria-labelledby="heading-myAccordion-2"
+                data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                  <p>This application is a demonstration of the use of Javascript.</p>
+                  <p>You can enter your personal and professional information in the form on the left. Then you can
+                    preview the rendering of your signature on the right.</p>
+                  <p>Then you can copy the signature to your clipboard.</p>
+                  <a href="https://github.com/ThinkR-open/signature.js/" target="_blank">You can explore the code of
+                    this application on GitHub.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 p-3">
+        <div class="card">
+          <div class="card-header bg-ligth">
+            <div class="buttons">
+              <div class="close"></div>
+              <div class="minimize"></div>
+              <div class="zoom"></div>
+            </div>
+          </div>
+          <div class="card-body row gy-4">
+            <div id="intro">
+              <p>Hello the team!</p>
+              <p>You can edit your signature from this interface.</p>
+              <p>Then you'll just have to insert it as your signature.</p>
+              Thank you 😁
+            </div>
+            <div id="signature">
+              <table style="border-top: 1px solid #EAEAEA">
+                <tbody>
+                  <tr>
+                    <td>
+                      <table style="margin-bottom: 15px">
+                        <tbody>
+                          <tr>
+                            <td style="
+                                  font-weight: bold;
+                                  line-height: 1.9;
+                                  color: #f15522;
+                                  font-family: Lato, sans-serif;
+                                  font-size: 15px;
+                                ">
+                              <span id="fill_signature-firstname">
+                                {{firstname}}
+                              </span>
+                              <span id="fill_signature-lastname">
+                                {{lastname}}
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="
+                                  font-weight: 900;
+                                  line-height: 1;
+                                  font-family: Lato, sans-serif;
+                                  font-size: 14.5px;
+                                ">
+                              <span id="fill_signature-job_title">
+                                {{job_title}}
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="https://thinkr.fr" dir="ltr" target="_blank">
+                                <img
+                                  src="https://raw.githubusercontent.com/ThinkR-open/signature/main/inst/app/www/templates/thinkr/assets/logo.jpg"
+                                  alt="" border="0">
+                              </a>
+                            </td>
+                            <td width="20"></td>
+                            <td class="separator" width="2" bgcolor="#EAEAEA"></td>
+                            <td width="20"></td>
+                            <td style="display: grid; align-items: flex-start">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <a href="" dir="ltr" style="
+                                            text-decoration: none;
+                                            color: #aea9af;
+                                            font-size: 13px;
+                                            font-family: Lato, sans-serif;
+                                          " target="_blank">
+                                        <span id="fill_signature-phone">
+                                          {{phone}}
+                                        </span></a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <a href="" dir="ltr" style="
+                                            text-decoration: none;
+                                            color: #aea9af;
+                                            font-size: 13px;
+                                            font-family: Lato, sans-serif;
+                                          " target="_blank">
+                                        <span id="fill_signature-email">
+                                          {{email}}
+                                        </span></a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td style="
+                                          font-family: Lato, sans-serif;
+                                          font-size: 14.5px;
+                                        ">
+                                      Our services on &nbsp;<a href="https://rtask.thinkr.fr/" style="color: #f15522"
+                                        target="_blank">rtask.thinkr.fr</a>
+                                      <br>
+                                      Our training courses on&nbsp;<a href="https://thinkr.fr/formation-au-logiciel-r/"
+                                        style="color: #f15522" target="_blank">thinkr.fr</a><br>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div style="margin-top: 10px">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div>
+                                          <a href="https://github.com/ThinkR-open" dir="ltr" target="_blank">
+                                            <img
+                                              src="https://raw.githubusercontent.com/ThinkR-open/signature.js/main/signature/www/assets/icons/github.png"
+                                              alt="" width="23" height="23" border="0" style="display: block">
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td width="10"></td>
+                                      <td>
+                                        <div>
+                                          <a href="https://twitter.com/thinkR_fr" dir="ltr" target="_blank">
+                                            <img
+                                              src="https://raw.githubusercontent.com/ThinkR-open/signature.js/main/signature/www/assets/icons/twitter.png"
+                                              alt="" width="23" height="23" border="0" style="display: block">
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td width="10"></td>
+                                      <td>
+                                        <div>
+                                          <a href="https://fr.linkedin.com/company/thinkr-sas" dir="ltr"
+                                            target="_blank">
+                                            <img
+                                              src="https://raw.githubusercontent.com/ThinkR-open/signature.js/main/signature/www/assets/icons/linkedin.png"
+                                              alt="" width="23" height="23" border="0" style="display: block">
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td width="10"></td>
+                                      <td>
+                                        <div>
+                                          <a href="https://www.youtube.com/channel/UCE3OyQLmrQ5tnKc9qDIZbtw" dir="ltr"
+                                            target="_blank">
+                                            <img
+                                              src="https://raw.githubusercontent.com/ThinkR-open/signature.js/main/signature/www/assets/icons/youtube.png"
+                                              alt="" width="23" height="23" border="0" style="display: block">
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td width="10"></td>
+                                      <td>
+                                        <div>
+                                          <a href="https://www.twitch.tv/thinkr_fr" dir="ltr" target="_blank">
+                                            <img
+                                              src="https://raw.githubusercontent.com/ThinkR-open/signature.js/main/signature/www/assets/icons/twitch.png"
+                                              alt="" width="20" height="20" border="0" style="display: block">
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td width="10"></td>
+                                    </tr>
+
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table style="margin-top: 15px">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="https://thinkr-open.github.io/signature.js/" dir="ltr" target="_blank">
+                                <img
+                                  src="https://raw.githubusercontent.com/ThinkR-open/signature.js/main/signature/www/assets/current_banner.png"
+                                  alt="ThinkR banner" border="0" height="150" width="520"
+                                  style="max-width:520px;width:520px;height:150px">
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-top-0">
+            <button type="button" class="btn btn-primary w-100" id="signature-copy">Copy to clipboard</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
