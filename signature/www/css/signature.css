@@ -10789,7 +10789,6 @@ textarea.form-control-lg {
 
 [data-bs-theme=light] body {
   font-family: "Lato", sans-serif;
-  background-color: #f8f9fa;
   color: #495057;
 }
 [data-bs-theme=light] .accordion-button:not(.collapsed) {
