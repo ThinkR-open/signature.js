@@ -11,6 +11,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +19,23 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="www/js/signature.js"></script>
-
   <div class="container">
     <nav class="navbar navbar-light bg-transparent">
-      <a href="/" class="navbar-brand">Signature.js</a>
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">Signature.js</a>
+        <div class="mode-switch">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="light" autocomplete="off" checked>
+            <label class="btn btn-outline-info" for="light"><i class="bi bi-sun"></i></label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="dark" autocomplete="off">
+            <label class="btn btn-outline-info" for="dark"><i class="bi bi-moon"></i></label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="system" autocomplete="off">
+            <label class="btn btn-outline-info" for="system"><i class="bi bi-display"></i></label>
+          </div>
+        </div>
+      </div>
     </nav>
   </div>
 

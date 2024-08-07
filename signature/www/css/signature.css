@@ -10721,22 +10721,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #494955;
-}
-
-.navbar {
-  padding: 1.5em 0;
-}
-.navbar .navbar-brand {
-  font-size: 1.5em;
-  font-family: "Permanent Marker", cursive;
-  pointer-events: none;
-  color: #f15522;
+.buttons-default, .zoom, .minimize, .close {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .buttons {
@@ -10744,13 +10733,6 @@ body {
   align-items: center;
   grid-gap: 7px;
   height: 20px;
-}
-
-.buttons-default, .zoom, .minimize, .close {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 .close {
@@ -10766,6 +10748,61 @@ body {
 .zoom {
   background: #27c840;
   border: 1px solid #27c840;
+}
+
+[data-bs-theme=dark] body {
+  font-family: "Lato", sans-serif;
+  background-color: #212529;
+  color: #e0e0e0;
+}
+[data-bs-theme=dark] .accordion-button {
+  color: #e0e0e0;
+  background-color: #212529;
+}
+[data-bs-theme=dark] .card {
+  background-color: #212529;
+  color: #e0e0e0;
+  border-color: rgba(50, 57, 64, 0.9);
+}
+[data-bs-theme=dark] .accordion {
+  --bs-accordion-bg: $dark-background;
+  --bs-accordion-color: $dark-text;
+  --bs-accordion-border-color: rgb(50 57 64 / 90%);
+}
+[data-bs-theme=dark] .toast-body {
+  color: #212529;
+}
+[data-bs-theme=dark] .form-control {
+  background-color: #212529;
+  color: #e0e0e0;
+  border-color: rgba(50, 57, 64, 0.9);
+}
+[data-bs-theme=dark] .navbar {
+  padding: 1.5em 0;
+}
+[data-bs-theme=dark] .navbar .navbar-brand {
+  font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
+  pointer-events: none;
+  color: #f15522;
+}
+
+[data-bs-theme=light] body {
+  font-family: "Lato", sans-serif;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+[data-bs-theme=light] .accordion-button:not(.collapsed) {
+  color: #494955;
+}
+[data-bs-theme=light] .navbar {
+  padding: 1.5em 0;
+}
+[data-bs-theme=light] .navbar .navbar-brand {
+  font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
+  pointer-events: none;
+  color: #f15522;
 }
 
 /*# sourceMappingURL=signature.css.map */
