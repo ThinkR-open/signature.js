@@ -1,7 +1,5 @@
 // Custom.scss
-// Option A: Include all of Bootstrap
 
-// Include any default variable overrides here (though functions won't be available)
 $primary: #b8b8dc;
 $secondary: #f15522;
 $info: #494955;
@@ -9,29 +7,24 @@ $close: #ff5f57;
 $minimize: #febc2e;
 $zoom: #27c840;
 
+$dark-background: #212529;
+$dark-text: #e0e0e0;
+$dark-secondary: #f15522;
+$dark-info: #03dac6;
+$dark-close: #ff5f57;
+$dark-minimize: #febc2e;
+$dark-zoom: #27c840;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap");
 
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.accordion-button:not(.collapsed) {
-  color: $info;
-}
-
-.navbar {
-  padding: 1.5em 0;
-
-  .navbar-brand {
-    font-size: 1.5em;
-    font-family: "Permanent Marker", cursive;
-    pointer-events: none;
-    color: $secondary;
-  }
+.buttons-default {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .buttons {
@@ -41,27 +34,89 @@ body {
   height: 20px;
 }
 
-.buttons-default {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
 .close {
   @extend .buttons-default;
-  background: $close;
-  border: 1px solid $close;
+  background: $dark-close;
+  border: 1px solid $dark-close;
 }
 
 .minimize {
   @extend .buttons-default;
-  background: $minimize;
-  border: 1px solid $minimize;
+  background: $dark-minimize;
+  border: 1px solid $dark-minimize;
 }
 
 .zoom {
   @extend .buttons-default;
-  background: $zoom;
-  border: 1px solid $zoom;
+  background: $dark-zoom;
+  border: 1px solid $dark-zoom;
+}
+
+[data-bs-theme="dark"] {
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+
+  .accordion-button {
+    color: $dark-text;
+    background-color: $dark-background;
+  }
+
+  .card {
+    background-color: $dark-background;
+    color: $dark-text;
+    border-color: rgb(50 57 64 / 90%);
+  }
+
+  .accordion {
+    --bs-accordion-bg: $dark-background;
+    --bs-accordion-color: $dark-text;
+    --bs-accordion-border-color: rgb(50 57 64 / 90%);
+  }
+
+  .toast-body {
+    color: $dark-background;
+  }
+
+  .form-control {
+    background-color: $dark-background;
+    color: $dark-text;
+    border-color: rgb(50 57 64 / 90%);
+  }
+
+  .navbar {
+    padding: 1.5em 0;
+
+    .navbar-brand {
+      font-size: 1.5em;
+      font-family: "Permanent Marker", cursive;
+      pointer-events: none;
+      color: $dark-secondary;
+    }
+  }
+}
+
+[data-bs-theme="light"] {
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: $info;
+  }
+
+  .navbar {
+    padding: 1.5em 0;
+
+    .navbar-brand {
+      font-size: 1.5em;
+      font-family: "Permanent Marker", cursive;
+      pointer-events: none;
+      color: $secondary;
+    }
+  }
 }
