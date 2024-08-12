@@ -23,7 +23,7 @@ function setTheme(mode = "auto") {
     .querySelectorAll(".mode-switch .btn-check")
     .forEach((e) => (e.checked = false));
   console.log("Mode: ", modeChosen);
-  document.getElementById(modeChosen).checked = true;
+  // document.getElementById(modeChosen).checked = true;
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -71,6 +71,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         } else {
           span.innerHTML = inputValue;
         }
+      }
+
+      const linkPhone = document.getElementById("form_signature_phone-link");
+      const linkEmail = document.getElementById("form_signature_email-link");
+
+      if (inputName === "phone") {
+        console.log(`Setting phone link to: ${inputValue}`);
+        linkPhone.href = `tel:${inputValue}`;
+      }
+
+      if (inputName === "email") {
+        linkEmail.href = `mailto:${inputValue}`;
       }
     });
   }
