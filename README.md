@@ -20,7 +20,7 @@ Lastly, updating the banner (the image at the bottom of the signature) and the a
 ## Demo
 
 🕹️ Try the app at:
-[https://connect.thinkr.fr/signature-js/](https://connect.thinkr.fr/signature-js/)
+[https://signature-js-psi.vercel.app/](https://signature-js-psi.vercel.app/)
 
 ## Try locally
 
@@ -39,12 +39,6 @@ To compile the SCSS to CSS, run:
 ```bash
 sass signature/www/scss/signature.scss signature/www/css/signature.css
 ```
-
-## How the redirection banner works?
-
-The redirection banner is a JavaScript function that redirects the user to the specified URL.
-
-To modify the redirection URL, edit the `index.html` file.
 
 ## Mockup
 
