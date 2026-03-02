@@ -20,7 +20,7 @@ Lastly, updating the banner (the image at the bottom of the signature) and the a
 ## Demo
 
 🕹️ Try the app at:
-[https://signature-js-psi.vercel.app/](https://signature-js-psi.vercel.app/)
+[https://connect.thinkr.fr/signature-js/](https://connect.thinkr.fr/signature-js/)
 
 ## Try locally
 
